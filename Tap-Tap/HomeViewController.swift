@@ -18,6 +18,7 @@ class HomeViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Ceci est un Test")
+        print("Ceci est un autre test")
         // Do any additional setup after loading the view.
     }
 
