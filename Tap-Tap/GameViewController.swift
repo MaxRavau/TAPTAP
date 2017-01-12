@@ -1,9 +1,9 @@
 import UIKit
-
+import AVFoundation
 
 class GameViewController: UIViewController {
   
-    
+    var audioPlayer = AVAudioPlayer()
     
     var score = 0
     
@@ -45,6 +45,8 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         
         debutJeu()
+    
+        
         
     }
     // j'ai créer la fonction viewDidLoad(), ou la fonction déclaré est débutJeu.
@@ -55,6 +57,11 @@ class GameViewController: UIViewController {
         print("le score est de \(score)")
         compteurLabel.text = "\(score)"
         
+        let sound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "sound", ofType: "mp3")!); do {
+            
+            audioPlayer = try AVAudioPlayer(contentsOf: sound as URL); audioPlayer.prepareToPlay() } catch { print("Problem in getting File") };
+        
+            audioPlayer.play()
         
         if score == 1 {
             
@@ -108,5 +115,6 @@ class GameViewController: UIViewController {
         finJeuLabel.isHidden = false
         
     }
+    
     
     }
