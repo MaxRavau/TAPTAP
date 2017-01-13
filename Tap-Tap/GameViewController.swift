@@ -5,6 +5,8 @@ class GameViewController: UIViewController {
   
     var player = AVAudioPlayer()
     
+    var player2 = AVAudioPlayer()
+    
     var score = 0
     
     var counter = 20
@@ -53,6 +55,15 @@ class GameViewController: UIViewController {
         catch {
             // ERREUR
         }
+        do {
+            let audioPath = Bundle.main.path(forResource: "Applaudissement", ofType: "wav")
+            try player2 = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+        }
+        catch {
+            // ERREUR
+        }
+
+        
     }
     // j'ai créer la fonction viewDidLoad(), ou la fonction déclaré est débutJeu.
     
@@ -114,7 +125,16 @@ class GameViewController: UIViewController {
         restartPlayButton.isHidden = false
         finJeuLabel.isHidden = false
         player.pause()
+        UserScore()
+        player2.play()
     }
     
+    func UserScore () {
+        
+        let defaults = UserDefaults.standard
+        defaults.integer(forKey: "compteurLabel")
+        
+        print("\(compteurLabel)")
+    }
     
     }
