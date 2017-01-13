@@ -8,9 +8,11 @@
 
 import UIKit
 import Social
+import AVFoundation
 
 class HomeViewController: UIViewController{
     
+    var player = AVAudioPlayer()
     
     @IBOutlet var buttonShare: UIButton!
     @IBOutlet weak var diamantLabel: UILabel!
@@ -19,12 +21,28 @@ class HomeViewController: UIViewController{
         super.viewDidLoad()
         print("Ceci est un Test")
         print("Ceci est un autre test")
+        
+        do {
+            let audioPath = Bundle.main.path(forResource: "song", ofType: "mp3")
+            try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+        }
+        catch {
+            // ERREUR
+        }
+
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func buttonPlay(_ sender: Any) {
+    
+    player.play()
+    
+    
     }
     
     @IBAction func buttonShare(_ sender: UIButton) {
