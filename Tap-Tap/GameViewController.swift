@@ -3,7 +3,7 @@ import AVFoundation
 
 class GameViewController: UIViewController {
   
-    var audioPlayer = AVAudioPlayer()
+    var player = AVAudioPlayer()
     
     var score = 0
     
@@ -46,8 +46,13 @@ class GameViewController: UIViewController {
         
         debutJeu()
     
-        
-        
+        do {
+           let audioPath = Bundle.main.path(forResource: "sound", ofType: "mp3")
+            try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+        }
+        catch {
+            // ERREUR
+        }
     }
     // j'ai créer la fonction viewDidLoad(), ou la fonction déclaré est débutJeu.
     
@@ -56,16 +61,11 @@ class GameViewController: UIViewController {
         score += 1
         print("le score est de \(score)")
         compteurLabel.text = "\(score)"
-        
-        let sound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "sound", ofType: "mp3")!); do {
-            
-            audioPlayer = try AVAudioPlayer(contentsOf: sound as URL); audioPlayer.prepareToPlay() } catch { print("Problem in getting File") };
-        
-            audioPlayer.play()
+        player.play()
         
         if score == 1 {
             
-            
+         
             boucleJeu()
         }
     }
@@ -113,7 +113,7 @@ class GameViewController: UIViewController {
         tapButton.isEnabled = false
         restartPlayButton.isHidden = false
         finJeuLabel.isHidden = false
-        
+        player.pause()
     }
     
     
