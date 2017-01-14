@@ -23,7 +23,7 @@ class HomeViewController: UIViewController{
         print("Ceci est un autre test")
         
         do {
-            let audioPath = Bundle.main.path(forResource: "song", ofType: "mp3")
+            let audioPath = Bundle.main.path(forResource: "Parapluie", ofType: "wav")
             try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
         }
         catch {

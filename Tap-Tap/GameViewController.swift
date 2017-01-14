@@ -3,7 +3,7 @@ import AVFoundation
 
 class GameViewController: UIViewController {
   
-    var player = AVAudioPlayer()
+    
     
     var player2 = AVAudioPlayer()
     
@@ -48,14 +48,7 @@ class GameViewController: UIViewController {
         
         debutJeu()
     
-        do {
-           let audioPath = Bundle.main.path(forResource: "sound", ofType: "mp3")
-            try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
-        }
-        catch {
-            // ERREUR
-        }
-        do {
+               do {
             let audioPath = Bundle.main.path(forResource: "Applaudissement", ofType: "wav")
             try player2 = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
         }
@@ -72,7 +65,7 @@ class GameViewController: UIViewController {
         score += 1
         print("le score est de \(score)")
         compteurLabel.text = "\(score)"
-        player.play()
+        
         
         if score == 1 {
             
@@ -124,17 +117,18 @@ class GameViewController: UIViewController {
         tapButton.isEnabled = false
         restartPlayButton.isHidden = false
         finJeuLabel.isHidden = false
-        player.pause()
         UserScore()
         player2.play()
     }
     
     func UserScore () {
         
-        let defaults = UserDefaults.standard
-        defaults.integer(forKey: "compteurLabel")
+        let defaults = UserDefaults.standard 
+        defaults.integer(forKey: "score")
         
-        print("\(compteurLabel)")
+        
+        
+        print("\(score)")
     }
     
     }

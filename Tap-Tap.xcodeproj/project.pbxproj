@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5063D09E1E2901CA009D6EB0 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5063D09D1E2901CA009D6EB0 /* sound.mp3 */; };
-		5063D0A01E290687009D6EB0 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5063D09F1E290687009D6EB0 /* song.mp3 */; };
 		5063D0A41E2935BD009D6EB0 /* Applaudissement.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5063D0A31E2935BC009D6EB0 /* Applaudissement.wav */; };
+		5063D0A81E2A603F009D6EB0 /* Parapluie.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5063D0A71E2A603F009D6EB0 /* Parapluie.wav */; };
+		5063D0AA1E2A630A009D6EB0 /* cle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5063D0A91E2A630A009D6EB0 /* cle.wav */; };
+		5063D0AC1E2A6559009D6EB0 /* pouet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5063D0AB1E2A6559009D6EB0 /* pouet.wav */; };
 		50C8E1161D9FA169007253CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C8E1151D9FA169007253CE /* AppDelegate.swift */; };
 		50C8E1181D9FA169007253CE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C8E1171D9FA169007253CE /* GameViewController.swift */; };
 		50C8E11B1D9FA169007253CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C8E1191D9FA169007253CE /* Main.storyboard */; };
@@ -38,9 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5063D09D1E2901CA009D6EB0 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
-		5063D09F1E290687009D6EB0 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		5063D0A31E2935BC009D6EB0 /* Applaudissement.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Applaudissement.wav; sourceTree = "<group>"; };
+		5063D0A71E2A603F009D6EB0 /* Parapluie.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Parapluie.wav; sourceTree = "<group>"; };
+		5063D0A91E2A630A009D6EB0 /* cle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cle.wav; sourceTree = "<group>"; };
+		5063D0AB1E2A6559009D6EB0 /* pouet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pouet.wav; sourceTree = "<group>"; };
 		50C8E1121D9FA169007253CE /* Tap-Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap-Tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C8E1151D9FA169007253CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50C8E1171D9FA169007253CE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -112,9 +114,10 @@
 				50C8E11C1D9FA169007253CE /* Assets.xcassets */,
 				50C8E11E1D9FA169007253CE /* LaunchScreen.storyboard */,
 				50C8E1211D9FA169007253CE /* Info.plist */,
-				5063D09D1E2901CA009D6EB0 /* sound.mp3 */,
-				5063D09F1E290687009D6EB0 /* song.mp3 */,
 				5063D0A31E2935BC009D6EB0 /* Applaudissement.wav */,
+				5063D0A71E2A603F009D6EB0 /* Parapluie.wav */,
+				5063D0A91E2A630A009D6EB0 /* cle.wav */,
+				5063D0AB1E2A6559009D6EB0 /* pouet.wav */,
 			);
 			path = "Tap-Tap";
 			sourceTree = "<group>";
@@ -247,12 +250,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5063D09E1E2901CA009D6EB0 /* sound.mp3 in Resources */,
 				50C8E1201D9FA169007253CE /* LaunchScreen.storyboard in Resources */,
+				5063D0A81E2A603F009D6EB0 /* Parapluie.wav in Resources */,
 				50C8E11D1D9FA169007253CE /* Assets.xcassets in Resources */,
 				50C8E11B1D9FA169007253CE /* Main.storyboard in Resources */,
 				5063D0A41E2935BD009D6EB0 /* Applaudissement.wav in Resources */,
-				5063D0A01E290687009D6EB0 /* song.mp3 in Resources */,
+				5063D0AC1E2A6559009D6EB0 /* pouet.wav in Resources */,
+				5063D0AA1E2A630A009D6EB0 /* cle.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
