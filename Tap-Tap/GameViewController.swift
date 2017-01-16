@@ -117,18 +117,14 @@ class GameViewController: UIViewController {
         tapButton.isEnabled = false
         restartPlayButton.isHidden = false
         finJeuLabel.isHidden = false
-        UserScore()
         player2.play()
+        
     }
     
-    func UserScore () {
+    func setCustomScore(scored: String) {
         
-        let defaults = UserDefaults.standard 
-        defaults.integer(forKey: "score")
-        
-        
-        
-        print("\(score)")
+        UserDefaults.standard.set(scored, forKey: "score")
     }
+
     
-    }
+}

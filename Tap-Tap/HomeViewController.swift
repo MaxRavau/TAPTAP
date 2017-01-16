@@ -86,6 +86,17 @@ class HomeViewController: UIViewController{
 
     
     }
+    
+    func getScore() -> String {
+        // On  récupère object dans le UserDefault stocké à la clé "score"
+        if ( UserDefaults.standard.object(forKey: "score") == nil){
+            // On créer une base vide
+            let scored : String = "0"
+            // On sauvegarde cette base
+            UserDefaults.standard.set(scored, forKey: "score")
+        }
+        return UserDefaults.standard.object(forKey: "score") as! String
+    }
 
     
     
