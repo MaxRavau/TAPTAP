@@ -208,7 +208,7 @@
 				TargetAttributes = {
 					50C8E1111D9FA169007253CE = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = SGXTW3RJA2;
+						DevelopmentTeam = TV7MS89DG8;
 						ProvisioningStyle = Automatic;
 					};
 					50C8E1251D9FA16A007253CE = {
@@ -435,7 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon10;
-				DEVELOPMENT_TEAM = SGXTW3RJA2;
+				DEVELOPMENT_TEAM = TV7MS89DG8;
 				INFOPLIST_FILE = "Tap-Tap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Maxime-Ravau.Tap-Tap";
@@ -448,7 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon10;
-				DEVELOPMENT_TEAM = SGXTW3RJA2;
+				DEVELOPMENT_TEAM = TV7MS89DG8;
 				INFOPLIST_FILE = "Tap-Tap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Maxime-Ravau.Tap-Tap";

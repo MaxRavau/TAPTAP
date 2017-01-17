@@ -118,7 +118,7 @@ class GameViewController: UIViewController {
         restartPlayButton.isHidden = false
         finJeuLabel.isHidden = false
         player2.play()
-        
+        print("\(score)")
         
     }
     
@@ -130,7 +130,7 @@ class GameViewController: UIViewController {
         
         
         }
-        print("score")
+        
     
     }
 }
