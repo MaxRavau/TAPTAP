@@ -119,12 +119,18 @@ class GameViewController: UIViewController {
         finJeuLabel.isHidden = false
         player2.play()
         
+        
     }
     
     func setCustomScore(scored: String) {
         
+        if score >= 0{
+        
         UserDefaults.standard.set(scored, forKey: "score")
-    }
-
+        
+        
+        }
+        print("score")
     
+    }
 }

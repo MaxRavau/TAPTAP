@@ -16,6 +16,7 @@ class HomeViewController: UIViewController{
     
     @IBOutlet var buttonShare: UIButton!
     @IBOutlet weak var diamantLabel: UILabel!
+    @IBOutlet var scoreEnregistrer: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
