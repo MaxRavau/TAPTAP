@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		505D34CF1E2F6F8700E7D95F /* Constante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D34CE1E2F6F8700E7D95F /* Constante.swift */; };
+		505D34D11E2F9F2A00E7D95F /* Pouet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 505D34D01E2F9F2A00E7D95F /* Pouet.wav */; };
 		5063D0A41E2935BD009D6EB0 /* Applaudissement.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5063D0A31E2935BC009D6EB0 /* Applaudissement.wav */; };
 		5063D0A81E2A603F009D6EB0 /* Parapluie.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5063D0A71E2A603F009D6EB0 /* Parapluie.wav */; };
 		5063D0AA1E2A630A009D6EB0 /* cle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5063D0A91E2A630A009D6EB0 /* cle.wav */; };
-		5063D0AC1E2A6559009D6EB0 /* pouet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5063D0AB1E2A6559009D6EB0 /* pouet.wav */; };
 		50C8E1161D9FA169007253CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C8E1151D9FA169007253CE /* AppDelegate.swift */; };
 		50C8E1181D9FA169007253CE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C8E1171D9FA169007253CE /* GameViewController.swift */; };
 		50C8E11B1D9FA169007253CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C8E1191D9FA169007253CE /* Main.storyboard */; };
@@ -39,10 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		505D34CE1E2F6F8700E7D95F /* Constante.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constante.swift; sourceTree = "<group>"; };
+		505D34D01E2F9F2A00E7D95F /* Pouet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pouet.wav; sourceTree = "<group>"; };
 		5063D0A31E2935BC009D6EB0 /* Applaudissement.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Applaudissement.wav; sourceTree = "<group>"; };
 		5063D0A71E2A603F009D6EB0 /* Parapluie.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Parapluie.wav; sourceTree = "<group>"; };
 		5063D0A91E2A630A009D6EB0 /* cle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cle.wav; sourceTree = "<group>"; };
-		5063D0AB1E2A6559009D6EB0 /* pouet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pouet.wav; sourceTree = "<group>"; };
 		50C8E1121D9FA169007253CE /* Tap-Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap-Tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C8E1151D9FA169007253CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50C8E1171D9FA169007253CE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -108,8 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				50C8E1151D9FA169007253CE /* AppDelegate.swift */,
-				50C8E1171D9FA169007253CE /* GameViewController.swift */,
+				505D34CE1E2F6F8700E7D95F /* Constante.swift */,
 				50D015601DA578F80094E2F2 /* HomeViewController.swift */,
+				50C8E1171D9FA169007253CE /* GameViewController.swift */,
 				50C8E1191D9FA169007253CE /* Main.storyboard */,
 				50C8E11C1D9FA169007253CE /* Assets.xcassets */,
 				50C8E11E1D9FA169007253CE /* LaunchScreen.storyboard */,
@@ -117,7 +120,7 @@
 				5063D0A31E2935BC009D6EB0 /* Applaudissement.wav */,
 				5063D0A71E2A603F009D6EB0 /* Parapluie.wav */,
 				5063D0A91E2A630A009D6EB0 /* cle.wav */,
-				5063D0AB1E2A6559009D6EB0 /* pouet.wav */,
+				505D34D01E2F9F2A00E7D95F /* Pouet.wav */,
 			);
 			path = "Tap-Tap";
 			sourceTree = "<group>";
@@ -251,11 +254,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				50C8E1201D9FA169007253CE /* LaunchScreen.storyboard in Resources */,
+				505D34D11E2F9F2A00E7D95F /* Pouet.wav in Resources */,
 				5063D0A81E2A603F009D6EB0 /* Parapluie.wav in Resources */,
 				50C8E11D1D9FA169007253CE /* Assets.xcassets in Resources */,
 				50C8E11B1D9FA169007253CE /* Main.storyboard in Resources */,
 				5063D0A41E2935BD009D6EB0 /* Applaudissement.wav in Resources */,
-				5063D0AC1E2A6559009D6EB0 /* pouet.wav in Resources */,
 				5063D0AA1E2A630A009D6EB0 /* cle.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50C8E1181D9FA169007253CE /* GameViewController.swift in Sources */,
+				505D34CF1E2F6F8700E7D95F /* Constante.swift in Sources */,
 				50C8E1161D9FA169007253CE /* AppDelegate.swift in Sources */,
 				50D015611DA578F80094E2F2 /* HomeViewController.swift in Sources */,
 			);

@@ -80,7 +80,7 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQj-cY-9zS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQj-cY-9zS" userLabel="ScoreRecord">
                                 <rect key="frame" x="45" y="36" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="GaH-Oc-WQ9"/>
@@ -89,6 +89,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partagez nous avec vos Amis :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgP-F8-r2K">
                                 <rect key="frame" x="81" y="482" width="213" height="36"/>
@@ -139,7 +140,7 @@
                     </view>
                     <connections>
                         <outlet property="buttonShare" destination="7nP-RT-Tfq" id="md8-sZ-fdT"/>
-                        <outlet property="scoreEnregistrer" destination="eQj-cY-9zS" id="Pyk-jn-JFW"/>
+                        <outlet property="scoreRecord" destination="eQj-cY-9zS" id="Vcr-Gz-iA1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

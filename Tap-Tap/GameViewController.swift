@@ -4,11 +4,6 @@ import AVFoundation
 class GameViewController: UIViewController {
   
     
-    
-    var player2 = AVAudioPlayer()
-    
-    var score = 0
-    
     var counter = 20
 
     var time = Timer()
@@ -48,26 +43,17 @@ class GameViewController: UIViewController {
         
         debutJeu()
     
-               do {
-            let audioPath = Bundle.main.path(forResource: "Applaudissement", ofType: "wav")
-            try player2 = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
-        }
-        catch {
-            // ERREUR
-        }
-
-        
     }
     // j'ai créer la fonction viewDidLoad(), ou la fonction déclaré est débutJeu.
     
     
     @IBAction func buttonPress(_ sender: UIButton) {
-        score += 1
-        print("le score est de \(score)")
-        compteurLabel.text = "\(score)"
+        scoreActuel += 1
+        print("le score est de \(scoreActuel)")
+        compteurLabel.text = "\(scoreActuel)"
         
         
-        if score == 1 {
+        if scoreActuel == 1 {
             
          
             boucleJeu()
@@ -91,12 +77,12 @@ class GameViewController: UIViewController {
     func debutJeu () {
       
         tapButton.isEnabled = true
-        score = 0
+        scoreActuel = 0
         counter = 20
         restartPlayButton.isHidden = true
         finJeuLabel.isHidden = true
         timeLabel.text = "\(counter)"
-        compteurLabel.text = "\(score)"
+        compteurLabel.text = "\(scoreActuel)"
         
 
     }
@@ -117,20 +103,10 @@ class GameViewController: UIViewController {
         tapButton.isEnabled = false
         restartPlayButton.isHidden = false
         finJeuLabel.isHidden = false
-        player2.play()
-        print("\(score)")
+        saveScore()
+        
+        
         
     }
     
-    func setCustomScore(scored: String) {
-        
-        if score >= 0{
-        
-        UserDefaults.standard.set(scored, forKey: "score")
-        
-        
-        }
-        
-    
-    }
 }

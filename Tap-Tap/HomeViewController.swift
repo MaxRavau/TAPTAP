@@ -16,21 +16,25 @@ class HomeViewController: UIViewController{
     
     @IBOutlet var buttonShare: UIButton!
     @IBOutlet weak var diamantLabel: UILabel!
-    @IBOutlet var scoreEnregistrer: UILabel!
+    @IBOutlet var scoreRecord: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Ceci est un Test")
-        print("Ceci est un autre test")
         
+// On peut aussi mettre le chargement des sons dans viewDidLoad.
         do {
             let audioPath = Bundle.main.path(forResource: "Parapluie", ofType: "wav")
             try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
         }
         catch {
             // ERREUR
+        
+         
+            
         }
 
+        
         // Do any additional setup after loading the view.
     }
 
@@ -38,14 +42,22 @@ class HomeViewController: UIViewController{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     @IBAction func buttonPlay(_ sender: Any) {
     
     player.play()
     
     
     }
-    
+// Fonction viewWillAppear quand on apparait sur la page HomeViewController la page ce mets a jours
+    override func viewWillAppear(_ animated: Bool) {
+        
+        
+        
+        
+        
+    }
+// Fonction button Facebook pour partager sur Facebook
     @IBAction func buttonShare(_ sender: UIButton) {
     
         if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook) {
@@ -65,6 +77,8 @@ class HomeViewController: UIViewController{
         }
         
     }
+    
+// Fonction button Twitter pour partager sur Twitter
     @IBAction func shareTwitter(_ sender: UIButton) {
     
         if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter) {
@@ -88,17 +102,7 @@ class HomeViewController: UIViewController{
     
     }
     
-    func getScore() -> String {
-        // On  récupère object dans le UserDefault stocké à la clé "score"
-        if ( UserDefaults.standard.object(forKey: "score") == nil){
-            // On créer une base vide
-            let scored : String = "0"
-            // On sauvegarde cette base
-            UserDefaults.standard.set(scored, forKey: "score")
-        }
-        return UserDefaults.standard.object(forKey: "score") as! String
-    }
-
+    
     
     
 }
